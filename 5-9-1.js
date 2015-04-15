@@ -7,6 +7,9 @@ jQuery(document).ready(function() {
 	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 
+	map.locate({setView: true, maxZoom: 18}); //te da la localizacion en la que estas
+	
+	
 	// add a marker in the given location, attach some popup content to it and open the popup
 	L.marker([40.2838, -3.8215]).addTo(map)
 	    .bindPopup('AULARIO 3 <br> URJC')
